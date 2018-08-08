@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMAGLY</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- FONT GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <!-- JQUERY LINK FILE -->
+    <script src="javascript_part2.js"></script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC3IZU6ZDcC64U3Vf82rg92wiBe5iJAfxA",
+        authDomain: "felipe-javascript-final.firebaseapp.com",
+        databaseURL: "https://felipe-javascript-final.firebaseio.com",
+        projectId: "felipe-javascript-final",
+        storageBucket: "felipe-javascript-final.appspot.com",
+        messagingSenderId: "86061593212"
+    };
+    firebase.initializeApp(config);
+</script>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <h1>IMAGLY</h1>
+        </div>
+    </header>
+    <section id="mainsection">
+        <div class="wrapper">
+            <!-- submit files here -->
+            <div class="submit-wrapper">
+
+                <form>
+                    <label for="text">IMAGE URL</label>
+                    <input type="text" name="" value="" id="url-user">
+
+                    <label for="text">CAPTION</label>
+                    <input type="textarea" name="" value="" id="caption-user">
+
+                    <button type="button" name="button" id="submit-button">SUBMIT</button>
+                </form>
+
+            </div>
+
+            <!-- news part here -->
+            <div class="news-wrapper">
+                <h2>NEWS</h2>
+                <div class="news-box-wrapper"></div>
+            </div>
+
+            <!-- images here -->
+            <div class="images-wrapper"></div>
+        </div>
+    </section>
+
+</body>
+</html>
