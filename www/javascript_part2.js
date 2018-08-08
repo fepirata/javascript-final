@@ -39,7 +39,7 @@ $(function() {
         //     storedUrl: userUrl,
         //     storedCaption: userCaption
         // };
-        console.log(storedValues);
+//         console.log(storedValues);
 
         if(userUrl=='') {
             window.alert("IMAGE URL field is required")
